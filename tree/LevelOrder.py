@@ -7,7 +7,7 @@
 """
 二叉树的层次遍历
 """
-from LeetCode.tree.base_tree_train import TreeNode
+from tree.base_tree_train import TreeNode
 
 
 def levelOrder(root):

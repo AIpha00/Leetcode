@@ -19,7 +19,7 @@ leetcode: 98
 
 """
 
-from LeetCode.tree.base_tree_train import TreeNode
+from tree.base_tree_train import TreeNode
 
 """
 解法1：

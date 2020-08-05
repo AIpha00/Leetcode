@@ -3,7 +3,7 @@
  author: lvsongke@oneniceapp.com
  data:2019/09/11
 """
-from LeetCode.common.ListNode import ListNode, printNode
+from common.ListNode import ListNode, printNode
 
 
 def swapNode(node):

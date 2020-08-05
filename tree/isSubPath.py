@@ -10,8 +10,8 @@
 leetcode: 1367
 """
 
-from LeetCode.common.ListNode import ListNode
-from LeetCode.tree.base_tree_train import TreeNode
+from common.ListNode import ListNode
+from tree.base_tree_train import TreeNode
 
 
 def isSubPath(head, root):

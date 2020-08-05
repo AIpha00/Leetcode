@@ -4,7 +4,7 @@
  data:2019/09/11
 """
 
-from LeetCode.common.ListNode import ListNode
+from common.ListNode import ListNode
 
 
 def mergeTwoList(l1, l2):

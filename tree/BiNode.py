@@ -8,7 +8,7 @@
 将二叉树搜索树转换成单向链表，即将二叉树的左节点置为null，值为右节点、在原址上进行操作
 Leetcode: 面试题17.12
 """
-from LeetCode.tree.base_tree_train import TreeNode
+from tree.base_tree_train import TreeNode
 
 
 class Solution:

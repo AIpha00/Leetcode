@@ -6,7 +6,7 @@
 """
 判断是否是一颗对称二叉树
 """
-from LeetCode.tree.base_tree_train import TreeNode
+from tree.base_tree_train import TreeNode
 
 
 def isSymmetric(root):

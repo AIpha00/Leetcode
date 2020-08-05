@@ -7,7 +7,7 @@
 根据前序遍历和后序遍历，重新将二叉树进行构建
 Leetcode: 剑值offer 07
 """
-from LeetCode.tree.base_tree_train import TreeNode, Node
+from tree.base_tree_train import TreeNode, Node
 
 
 class Solution:

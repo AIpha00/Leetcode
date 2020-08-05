@@ -13,7 +13,7 @@
 判断一颗树是否是平衡二叉树的解题思路：
 求出该二叉树的深度
 """
-from LeetCode.tree.base_tree_train import TreeNode
+from tree.base_tree_train import TreeNode
 
 
 def tree_depth(root):

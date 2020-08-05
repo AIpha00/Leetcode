@@ -9,7 +9,7 @@
 
 leetcode: 173
 """
-from LeetCode.tree.base_tree_train import TreeNode
+from tree.base_tree_train import TreeNode
 
 """
 二叉搜索树: 若左子树不空，则左子树上所有节点的值均小于它的根节点的值；若它的右节点不空，则右子树上的所有节点的值均大于它的根节点的值， 示例：

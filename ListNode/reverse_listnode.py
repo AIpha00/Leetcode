@@ -7,7 +7,7 @@
 """
 实现链表的翻转，递归和非递归
 """
-from LeetCode.common.ListNode import ListNode, printNode
+from common.ListNode import ListNode, printNode
 
 cur = last = ListNode(0)  ## 新链表头，和当前替换的结点
 

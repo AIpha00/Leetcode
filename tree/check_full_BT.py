@@ -8,7 +8,7 @@
 判断一颗树是否是满二叉树
 
 """
-from LeetCode.tree.base_tree_train import TreeNode
+from tree.base_tree_train import TreeNode
 
 
 def solution(root):

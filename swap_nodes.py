@@ -53,7 +53,13 @@ def answer(head):
         pre.next, a.next, b.next = b, b.next, a
         pre = a
     return dummy.next
-
+    # prev, cur, tmp = None, head, None
+    # while cur and cur.next:
+    #     tmp = cur.next.next
+    #     prev = cur.next.next
+    #     prev.next = cur
+    #     cur = tmp
+    # return prev
 
 def removeDuplicates(nums):
     """
@@ -146,9 +152,9 @@ def combineWords(words):
 
 
 if __name__ == '__main__':
-    # head = ListNode(0, ListNode(1, ListNode(2)))
-    # res = answer(head)
-    # printNode(res)
+    head = ListNode(0, ListNode(1, ListNode(2)))
+    res = answer(head)
+    printNode(res)
     # nums = [0, 1,1,1,1,1, 2,2,2,2,2,2, 3, 4, 5]
     # # nums = [1, 1, 2]
     # res = removeDuplicates(nums)
@@ -156,5 +162,5 @@ if __name__ == '__main__':
     # s = "wordgoodgoodgoodbestword"
     # words = ["word","good","best","word"]
     s = "barfoothefoobarman"
-    words = ["foo", "bar"]
-    print(findSubstring(s, words))
+    # words = ["foo", "bar"]
+    # print(findSubstring(s, words))

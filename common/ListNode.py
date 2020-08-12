@@ -8,12 +8,20 @@
 """
 
 
-
 class ListNode():
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=None, next=None):
         self.val = val
         self.next = next
 
+
+def buildNode(vals):
+    head = cur = ListNode(0)
+    for val in vals:
+        lis = ListNode(val)
+        cur.next = lis
+        cur = cur.next
+    return head.next
+        
 
 def printNode(node):
     while node.next:

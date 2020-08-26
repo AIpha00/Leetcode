@@ -49,10 +49,10 @@ def DFS(head):
 
 
 if __name__ == '__main__':
-    a = [-10, -3, 0, 5, 9]
+    a = [4, 2, 1, 3, 8]
     head = buildNode(a)
-    res = DFS(head)
-    # res = findMidList(head)
+    # res = DFS(head)
+    res = findMidList(head)
     # res_0 = findMidList(res.next)
     # res_1 = findMidList(res_0.next)
     print(res)

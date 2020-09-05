@@ -84,7 +84,7 @@ def preorder(res, root):
     :param root:
     :return:
     """
-    #递归终止条件
+    # 递归终止条件
     if not root:
         return
 
@@ -96,6 +96,7 @@ def preorder(res, root):
         preorder(res, root.right)
     ##回到这一层做什么
     return res, root
+
 
 if __name__ == '__main__':
     tree = TreeNode()

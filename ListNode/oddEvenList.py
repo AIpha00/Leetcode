@@ -26,6 +26,9 @@ def oddEvenList(head):
     even_head = even = head.next
     while odd.next and even.next:
         #将节点的下个节点指向每步走两个节点
+
+        ##先处理偶链表，后处理奇链表，有问题，原因是什么呢
+        ##当链表节点数为奇数时，偶节点会先走到头指向null，此时的最后一个奇数节点会被丢弃，所以应该先操作奇数链表，再操作偶数链表
         odd.next = odd.next.next
         even.next = even.next.next
 

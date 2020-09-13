@@ -6,6 +6,8 @@
 
 """
 找到有序链表中的中位数
+
+双指针，快慢指针，快指针走到头，慢指针恰好在中间，因为fast == 2 * slow
 """
 from common.ListNode import buildNode
 from tree.base_tree_train import Node
@@ -18,14 +20,12 @@ def findMidList(head):
     :return: 
     """
     if not head:
-        return
-    fast = head
-    slow = head
-    # cur = None
-    while fast and fast.next:
+        return head
+    slow, fast = head, head
+    while fast.next and slow.next:
         cur = slow
-        fast = fast.next.next
         slow = slow.next
+        fast = fast.next.next
     if cur:
         cur.next = None
     return slow

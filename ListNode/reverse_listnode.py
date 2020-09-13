@@ -62,10 +62,28 @@ def reverseListByN(head, n):
     return last
 
 
+def reverseListByEasy(head):
+    """
+    翻转链表，比较好理解的写法
+    :param head:
+    :return:
+    """
+    if not head:
+        return head
+    pre, cur = None, head
+    ###两个节点，一个节点为前节点，一个节点为当前节点，让当前节点指向前节点，当前节点走完，即链表翻转结束
+    while cur:
+        tmp = cur.next
+        cur.next = pre
+        pre = cur
+        cur = tmp
+    return pre
+
+
 if __name__ == '__main__':
     node = ListNode(0, next=ListNode(2, next=ListNode(3, next=ListNode(4, next=ListNode(5)))))
     print("原链表：")
     printNode(node)
-    re_node = reverseListByN(node, 4)
+    re_node = reverseListByEasy(node)
     print('反转链表：')
     printNode(re_node)

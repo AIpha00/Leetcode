@@ -30,11 +30,11 @@ def partition(nums, l, r):
             i += 1
             nums[i], nums[j] = nums[j], nums[i]
     nums[i + 1], nums[r] = nums[r], nums[i + 1]
-    return i + 1
+    return i
 
 
 if __name__ == '__main__':
-    a = [2, 31, 1, 32, 3, 21, 4, 45, 46, 63, 421, 31]
+    a = [2, 31, 1, 32, 3, 21, 88, 89, 12, 34, 56, 2, 3, 4, 13, 3, 12, 321, 231, 31, 1, 13, 31, 4, 45, 46, 63, 421, 31]
 
-    quickSorted(a, 0, len(a)-1)
+    quickSorted(a, 0, len(a) - 1)
     print(a)
